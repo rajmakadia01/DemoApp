@@ -17,6 +17,7 @@ export default function BoardView() {
     const destCol = result.destination.droppableId
     dispatch(moveTask({ id: taskId, status: destCol }))
   }
+  
 
   return (
     <DragDropContext onDragEnd={onDragEnd}>
